@@ -7,10 +7,16 @@ public class AccountType {
 	
 	private int accountType;
 	
+	// CODE SMELL: Speculative Generality
+	// public boolean isPremium() {
+	// 	if (this.accountType == PREMIUM_ACCOUNT)
+	// 		return true;
+	// 	return false;
+	// }
+
+	// Refactoring: Inline Methods
 	public boolean isPremium() {
-		if (this.accountType == PREMIUM_ACCOUNT)
-			return true;
-		return false;
+		return this.accountType == PREMIUM_ACCOUNT;
 	}
 	
 	// Consider there is additional code here...

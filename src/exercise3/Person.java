@@ -8,8 +8,13 @@ public class Person {
 		department = arg;
 	}
 
-	public Person getManager() {
-		return department.getManager();
-	}
+	// CODE SMELL: Middle Man
+	// public Person getManager() {
+	// 	return department.getManager();
+	// }
 
+	// Refactoring: Remove Middle Man
+	public Department getDepartment() {
+		return department;
+	}
 }

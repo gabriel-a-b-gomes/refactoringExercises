@@ -1,14 +1,15 @@
-package exercise2;
+// CODE SMELL: Middle Man
+// package exercise2;
 
-public class Employee {
+// public class Employee {
 
-	private int rate;
+// 	private int rate;
 
-	public Employee(int rate) {
-		this.rate = rate;
-	}
+// 	public Employee(int rate) {
+// 		this.rate = rate;
+// 	}
 
-	public int getRate() {
-		return rate;
-	}
-}
+// 	public int getRate() {
+// 		return rate;
+// 	}
+// }

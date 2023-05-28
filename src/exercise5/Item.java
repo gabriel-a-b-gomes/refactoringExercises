@@ -23,4 +23,13 @@ public class Item {
 	}
 
 	//...
+
+	// Refactoring: Move method
+	float getTotalPrice() {
+		float price = this.getPrice() + this.getTax();
+		if (this.isOnSale())
+			price = price - this.getSaleDiscount() * price;
+		return price;
+	}
 }
+
